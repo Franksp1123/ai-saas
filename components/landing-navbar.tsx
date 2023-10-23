@@ -16,7 +16,7 @@ export const LandingNavbar = () => {
     return (
         <nav className="p-4 bg-transparent flex items-center justify-between">
             <Link href="/" className="flex items-center">
-                <div className="relative h-8 w-8 mr-4">
+                <div className="relative h-8 w-8 xl:ml-20 mr-4">
                     <Image fill alt="Logo" src="/logo.png" />
                 </div>
                 <h1 className={cn("text-2xl font-bold text-white", font.className)}>
@@ -25,7 +25,7 @@ export const LandingNavbar = () => {
             </Link>
             <div className="flex items-center gap-x-2">
                 <Link href={isSignedIn ? "/dashboard" : "/sign-up"}>
-                    <Button variant="premium" className="rounded-full">
+                    <Button variant="premium" className="rounded-full xl:mr-20">
                         Launch App
                     </Button>
                 </Link>
