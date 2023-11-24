@@ -17,7 +17,7 @@ model UserApiLimit {
 }
 model UserSubscription {
   id        String      @id @default(cuid())
-  userId    String   @unique
-  subscriptionID       String?   @unique
+  userId    String      @unique
+  subscriptionID        String?   @unique
   subscriptionPeriodEnd DateTime? @default(now())
 }
