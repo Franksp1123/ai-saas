@@ -1,5 +1,4 @@
 import { PayPalScriptProvider, PayPalButtons } from "@paypal/react-paypal-js";
-import Script from "next/script";
 
 interface ProductProps {
   hanldeApprove: Function;
